@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Díszkertek Katalógus – Flipbook</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip/dist/css/page-flip.min.css" />
+</head>
+<body>
+
+  <!-- Flipbook konténer -->
+  <div id="flipbook" class="page-flip"></div>
+
+</html>
+
+<section class="page növény virágos méhbarát">
+  <h2>🌸 Levendula</h2>
+  <img src="./assets/img/levendula.jpg" alt="Levendula növény">
+  <p>
+    A levendula mediterrán hangulatot kölcsönöz a kertednek, szárazságtűrő, fénykedvelő és illatos virágzatával vonzza a méheket.
+  </p>
+  <ul>
+  <li>🌞 Napfénykedvelő</li>
+  <li>🐝 Méhbarát</li>
+  <li>🌿 Évelő</li>
+  <li>🌳 Árnyéktűrő</li>       <!-- 🌳 fa = árnyékos környezet -->
+  <li>🌱 Alacsony növésű</li> <!-- 🌱 csíra = talajhoz közeli növény -->
+</ul>
+</section>
+
+<section class="page terko rusztikus referencia">
+  <h2>🧱 Prémium Antikolt Térkő – 60 m²</h2>
+  <img src="./assets/img/terko-premium.jpg" alt="Prémium antikolt térkő">
+  <p>
+    Ez a térkő megoldás ideális nagyobb udvarokhoz, természetes kőhatásával elegáns összhangot teremt a növényzettel.
+  </p>
+  <ul>
+    <li>🎨 Színek: szürke, homok, terrakotta</li>
+    <li>🧊 Fagyálló, csúszásmentes</li>
+    <li>📍 Referencia: Szeged, 2023 április</li>
+  </ul>
+</section>
+
+<section class="page referencia before-after">
+  <h2>🌳 Kertfelújítás – Előtte / Utána</h2>
+  <img src="./assets/img/before.jpg" alt="Előtte kép">
+  <img src="./assets/img/after.jpg" alt="Utána kép">
+  <p>
+    Az eredeti zöldterületet rusztikus térkövekkel, virágágyással és pergolával alakítottuk át – harmonikus és könnyen karbantartható látvány.
+  </p>
+</section>
+
+<section class="page referencia before-after">
+  <h2>🌳 Kertfelújítás – Előtte / Utána</h2>
+  <img src="./assets/img/before.jpg" alt="Előtte kép">
+  <img src="./assets/img/after.jpg" alt="Utána kép">
+  <p>
+    Az eredeti zöldterületet rusztikus térkövekkel, virágágyással és pergolával alakítottuk át – harmonikus és könnyen karbantartható látvány.
+  </p>
+</section>
+
+<div id="filter-menu" class="text-center">
+  <button data-filter="all">📚 Összes oldal</button>
+  <button data-filter="növény">🌿 Csak növények</button>
+  <button data-filter="összes-növény">🔄 Összes növény</button>
+  <button data-filter="méhbarát">🐝 Méhbarát</button>
+  <button data-filter="virágos">🌸 Virágos</button>
+  <button data-filter="árnyékos">🌳 Árnyéktűrők</button>
+  <button data-filter="alacsony">🌱 Alacsony növésűek</button>
+  <button data-filter="terko">🧱 Csak térkövek</button>
+  <button data-filter="összes-terko">🔄 Összes térkő</button>
+  <button data-filter="referencia">📸 Referenciák</button>
+</div>
+</body>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+  <script src="./assets/main.js"></script>
