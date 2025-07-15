@@ -1,12 +1,14 @@
-/* Alap stílusok */
+/* 🌿 Alap stílusok */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background-color: #f4f9f4;
   color: #333;
 }
- .diszkertek-cover {
-  background-image: url('./assets/img/hiro.jpg');
+
+/* 📗 Borítólap (Hard cover) */
+.diszkertek-cover {
+  background-image: url('https://picsum.photos/800/600');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -16,36 +18,29 @@ body {
   text-align: center;
   color: white;
   position: relative;
+  box-sizing: border-box;
 }
 
 .cover-content {
-  background-color: rgba(4, 130, 6, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 40px;
   border-radius: 12px;
+  max-width: 80%;
+  width: 100%;
 }
 
-.cover-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.cover-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-/* Flipbook konténer */
+/* 📘 Flipbook konténer */
 #flipbook {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  height: 90vh;
+  height: 800px; /* Fixált magasság a sima lapozásért */
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Lapok stílusa */
+/* 📄 Lapok */
 .page {
+  height: 100%; /* Egységes magasság minden lapra */
   padding: 40px;
   background-color: white;
   border-radius: 8px;
@@ -54,8 +49,8 @@ body {
   overflow-y: auto;
 }
 
-/* Címek és bekezdések */
-.page h2, .page h3 {
+/* 🖋️ Címek és szöveg */
+.page h1, .page h2, .page h3 {
   color: #2e7d32;
   margin-top: 0;
 }
@@ -65,7 +60,7 @@ body {
   font-size: 1rem;
 }
 
-/* Képek */
+/* 🖼️ Képek */
 .page img {
   max-width: 100%;
   border-radius: 8px;
@@ -75,7 +70,7 @@ body {
   object-fit: cover;
 }
 
-/* Szűrőgombok */
+/* 🔘 Szűrőgombok */
 #filter-menu {
   display: flex;
   flex-wrap: wrap;
@@ -99,7 +94,7 @@ body {
   background-color: #ccc;
 }
 
-/* Mobiloptimalizálás */
+/* 📱 Mobiloptimalizálás */
 @media (max-width: 768px) {
   #flipbook {
     height: 100vh;
@@ -119,5 +114,13 @@ body {
 
   .page img {
     max-height: 40vh;
+  }
+
+  .cover-content h1 {
+    font-size: 2rem;
+  }
+
+  .cover-content p {
+    font-size: 1rem;
   }
 }
