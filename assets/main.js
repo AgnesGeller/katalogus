@@ -16,29 +16,41 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileScrollSupport: true
   });
 
-  // Betölti a lapokat
+  // Betölti az összes lapot
   pageFlip.loadFromHTML(document.querySelectorAll(".page"));
 
-  // Szűrőgomb működés
+  // Szűrőgombok kezelése
   const buttons = document.querySelectorAll("#filter-menu button");
 
   buttons.forEach(button => {
     button.addEventListener("click", () => {
-      const filter = button.dataset.filter.replace(/^\./, "");
-      const pages = document.querySelectorAll(".page");
+      const filterValue = button.dataset.filter;
+      const allPages = document.querySelectorAll(".page");
 
-      pages.forEach(page => {
-        const classList = Array.from(page.classList);
-        const filterClasses = filter.split(".");
-        const isMatch =
-          filter === "all" ||
-          (filter === "összes-növény" && classList.includes("növény")) ||
-          (filter === "összes-terko" && classList.includes("terko")) ||
-          filterClasses.every(cls => classList.includes(cls));
+      allPages.forEach(page => {
+        const pageClasses = Array.from(page.classList);
+        let showPage = false;
 
-        // Display beállítása (nem újralapozás!)
-        page.style.display = isMatch ? "block" : "none";
+        if (filterValue === "all") {
+          showPage = true;
+        } else if (filterValue === "összes-növény" && pageClasses.includes("növény")) {
+          showPage = true;
+        } else if (filterValue === "összes-terko" && pageClasses.includes("terko")) {
+          showPage = true;
+        } else if (filterValue.startsWith(".")) {
+          const required = filterValue.replace(/^\./, "").split(".");
+          showPage = required.every(cls => pageClasses.includes(cls));
+        }
+
+        page.style.display = showPage ? "block" : "none";
       });
+
+      // Átlapozás az első látható oldalra
+      const visiblePages = Array.from(document.querySelectorAll(".page")).filter(p => p.style.display !== "none");
+      if (visiblePages.length > 0) {
+        const firstIndex = Array.from(document.querySelectorAll(".page")).indexOf(visiblePages[0]);
+        pageFlip.turnToPage(firstIndex);
+      }
     });
   });
 });
