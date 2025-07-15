@@ -43,6 +43,16 @@ body {
   margin: 20px 0;
   display: block;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Szűrőgombok */
+#filter-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
 }
 
 #filter-menu button {
@@ -55,6 +65,7 @@ body {
   border-radius: 6px;
   transition: all 0.2s ease-in-out;
 }
+
 #filter-menu button:hover {
   background-color: #ccc;
 }
@@ -62,10 +73,22 @@ body {
 /* Mobiloptimalizálás */
 @media (max-width: 768px) {
   #flipbook {
-    height: 85vh;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
   }
 
   .page {
     padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  #filter-menu button {
+    flex: 1 1 120px;
+    font-size: 0.9rem;
+  }
+
+  .page img {
+    max-height: 40vh;
   }
 }
