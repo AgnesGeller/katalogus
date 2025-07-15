@@ -45,6 +45,20 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+#filter-menu button {
+  padding: 8px 16px;
+  margin: 4px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+#filter-menu button:hover {
+  background-color: #ccc;
+}
+
 /* Mobiloptimalizálás */
 @media (max-width: 768px) {
   #flipbook {

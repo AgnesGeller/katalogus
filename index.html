@@ -14,28 +14,39 @@
   <!-- 🔹 Szűrőmenü -->
   <div id="filter-menu" class="text-center">
     <h3>Szűrés kategória szerint:</h3>
-    <button data-filter="all">📚 Összes oldal</button>
-    <button data-filter="növény">🌿 Csak növények</button>
     <button data-filter="összes-növény">🔄 Összes növény</button>
     <button data-filter="méhbarát">🐝 Méhbarát</button>
     <button data-filter="virágos">🌸 Virágos</button>
     <button data-filter="árnyékos">🌳 Árnyéktűrők</button>
     <button data-filter="alacsony">🌱 Alacsony növésűek</button>
-    <!-- Térkő kategóriák -->
-    <button data-filter="terko">🧱 Csak térkövek</button>
-    <button data-filter="összes-terko">🔄 Összes térkő</button>
-    <button data-filter="rusztikus">🏡 Rusztikus</button>
-    <button data-filter="modern">🏙️ Modern</button>
-    <button data-filter="referencia">📸 Referenciák</button>
   </div>
+  <!-- 📖 Térkő kategóriák -->
+<div id="filter-menu" class="text-center">
+  <h3>Szűrés kategória szerint:</h3>
+  <button data-filter=".terko">🧱 Térkövek (összes)</button>
+  <button data-filter=".terko.antikolt">🏛 Antikolt</button>
+  <button data-filter=".terko.rusztikus">🌾 Rusztikus</button>
+  <button data-filter=".terko.fagyallo">❄️ Fagyálló</button>
+  <button data-filter=".terko.csuszásmentes">🦶 Csúszásmentes</button>
+  <button data-filter=".terko.szemelyauto">🚗 Személyautós forgalomra</button>
+  <button data-filter=".terko.kombi">🔀 Kombi forma</button>
+  <button data-filter=".terko.hullamos">🌊 Hullámos szélű</button>
+  <button data-filter=".terko.mediterrán">🌿 Mediterrán stílus</button>
+  <button data-filter=".terko.disztegla">🧱 Dísztégla</button>
+  <button data-filter=".terko.terméskő">🪨 Terméskő burkolat</button>
+  <button data-filter=".terko.hasitott">🪓 Hasított felület</button>
+  <button data-filter=".terko.gyephézagos">🌱 Gyephézagos</button>
+  <button data-filter=".terko.referencia">📸 Referenciák</button>
+</div>
+
 
   <!-- 🔹 Flipbook konténer -->
   <div id="flipbook" class="page-flip">
 
     <!-- 📖 Növény – Levendula -->
     <section class="page növény virágos méhbarát évelő napos árnyékos alacsony">
-      <h2>🌸 Levendula</h2>
-      <img src="./assets/img/levander.jpg" alt="Levendula növény">
+      <h2>🌸 Levendula - Lavandula angustifolia</h2>
+      <img src="./assets/img/levi.png" alt="Levendula növény">
       <p>
         A levendula mediterrán hangulatot kölcsönöz a kertednek, szárazságtűrő, fénykedvelő és illatos virágzatával vonzza a méheket.
       </p>
@@ -47,31 +58,315 @@
         <li>🌱 Alacsony növésű</li>
       </ul>
     </section>
+    <section class="page növény virágos méhbarát évelő napos">
+  <h2>🌸 Körömvirág – Calendula officinalis </h2>
+  <img src="./assets/img/koromvirag.png" alt="Körömvirág">
+  <p>Erősen virágzó, egynyári faj, amely vonzza a méheket és gyógyhatású is.</p>
+  <ul>
+    <li>🌞 Napfénykedvelő</li>
+    <li>🐝 Méhbarát</li>
+    <li>🌿 Évelő</li>
+  </ul>
+</section>
 
-    <!-- 📖 Térkő – Rusztikus -->
-    <section class="page terko rusztikus referencia">
-      <h2>🧱 Prémium Antikolt Térkő – 60 m²</h2>
-      <img src="./assets/img/terko-premium.jpg" alt="Prémium antikolt térkő">
-      <p>
-        Ez a térkő megoldás ideális nagyobb udvarokhoz, természetes kőhatásával elegáns összhangot teremt a növényzettel.
-      </p>
-      <ul>
-        <li>🎨 Színek: szürke, homok, terrakotta</li>
-        <li>🧊 Fagyálló, csúszásmentes</li>
-        <li>📍 Referencia: Szeged, 2023 április</li>
-      </ul>
-    </section>
+<section class="page növény virágos árnyékos alacsony">
+  <h2>🌼 Szalmagyopár – Helichrysum italicum </h2>
+  <img src="./assets/img/kereklevelű szalmagy.png" alt="Szalmagyopár">
+  <p>Szegélynövénynek kiváló, alacsony növésű virág, árnyékos helyekre is alkalmas.</p>
+  <ul>
+    <li>🌳 Árnyéktűrő</li>
+    <li>🌱 Alacsony növésű</li>
+  </ul>
+</section>
 
-    <!-- 📖 Térkő – példák -->
-    <section class="page terko rusztikus">
-      <h2>🏡 Rusztikus térkő – Inspiráció</h2>
-      <p>... (ide jöhet majd tartalom)</p>
-    </section>
+<section class="page növény fa napos méhbarát">
+  <h2>🌳 Hársfa – Tilia cordata / Tilia tomentosa </h2>
+  <img src="./assets/img/hars.png" alt="Hársfa">
+  <p>Illatos virágai vonzzák a méheket, lombhullató árnyékot adó fa.</p>
+  <ul>
+    <li>🌞 Napos fekvés</li>
+    <li>🐝 Méhbarát</li>
+  </ul>
+</section>
 
-    <section class="page terko modern">
-      <h2>🏙️ Modern térkő – Inspiráció</h2>
-      <p>... (ide jöhet majd tartalom)</p>
-    </section>
+<section class="page növény tuja örökzöld alacsony">
+  <h2>🌲 Gömb tuja – Thuja occidentalis 'Danica'</h2>
+  <img src="./assets/img/gombtuja.png" alt="Gömb tuja">
+  <p>Alacsony növésű, kompakt örökzöld, ideális szegélyekhez és cserjefoltba.</p>
+  <ul>
+    <li>🌱 Alacsony növésű</li>
+    <li>🌿 Örökzöld</li>
+  </ul>
+</section>
+
+<section class="page növény fa napos">
+  <h2>🌳 Nyírfácska – Betula pendula </h2>
+  <img src="./assets/img/nyirfa.png" alt="Nyírfa">
+  <p>Díszes kérgű, légies lombú fa, napos kertrészekbe.</p>
+  <ul>
+    <li>🌞 Napfénykedvelő</li>
+  </ul>
+</section>
+
+<section class="page növény tuja árnyékos örökzöld">
+  <h2>🌲 Oszlopos tuja – Thuja occidentalis 'Columna' </h2>
+  <img src="./assets/img/Oszlopostuja.png" alt="Oszlopos tuja">
+  <p>Magas, keskeny növekedésű tuja, árnyéktűrő és térelválasztásra ideális.</p>
+  <ul>
+    <li>🌳 Árnyéktűrő</li>
+    <li>🌿 Örökzöld</li>
+  </ul>
+</section>
+
+<section class="page növény virágos méhbarát évelő">
+  <h2>🌺 Muskátli – Pelargonium zonale </h2>
+  <img src="./assets/img/muskatli.png" alt="Muskátli">
+  <p>Hosszan virágzó kedvenc, méheket vonz és balkonra is ültethető.</p>
+  <ul>
+    <li>🐝 Méhbarát</li>
+    <li>🌿 Évelő</li>
+  </ul>
+</section>
+
+<section class="page növény fa árnyékos">
+  <h2>🌳 Japán juhar – Acer palmatum </h2>
+  <img src="./assets/img/japanjuhar.png" alt="Japán juhar">
+  <p>Színes lombú, alacsony termetű díszfa, jól tűri az árnyékot.</p>
+  <ul>
+    <li>🌳 Árnyéktűrő</li>
+  </ul>
+</section>
+
+<section class="page növény tuja örökzöld napos">
+  <h2>🌲 Smaragd tuja - Thuja occidentalis 'Smaragd'</h2>
+  <img src="./assets/img/smaragdtuja .png" alt="Smaragd tuja">
+  <p>Pompás zöld lombú tuja, napos helyen gyorsan növekedik.</p>
+  <ul>
+    <li>🌿 Örökzöld</li>
+    <li>🌞 Napfénykedvelő</li>
+  </ul>
+</section>
+
+<section class="page növény virágos árnyékos méhbarát">
+  <h2>🌼 Árnyliliom - Hosta spp</h2>
+  <img src="./assets/img/arnyek.jpg" alt="Árnyliliom">
+  <p>Díszes levélzetű árnyéktűrő évelő, virágai méhbarátok.</p>
+  <ul>
+    <li>🌳 Árnyéktűrő</li>
+    <li>🐝 Méhbarát</li>
+  </ul>
+</section>
+
+<section class="page növény virágos évelő">
+  <h2>🌺 Dísznapraforgó – Helianthus annuus</h2>
+  <img src="./assets/img/disznapraforgo.png" alt="Dísznapraforgó">
+  <p>Feltűnő virágzatával napos kertrészeket díszít, magassága miatt háttérnövényként is jó választás.</p>
+  <ul>
+    <li>🌞 Napfénykedvelő</li>
+    <li>🌿 Évelő</li>
+  </ul>
+</section>
+
+<section class="page növény fa örökzöld">
+  <h2>🌲 Lucfenyő – Picea abies </h2>
+  <img src="./assets/img/luc.png" alt="Lucfenyő">
+  <p>Klasszikus örökzöld fa, amely szeles helyekre is telepíthető.</p>
+  <ul>
+    <li>🌿 Örökzöld</li>
+  </ul>
+</section>
+
+<section class="page növény virágos méhbarát évelő">
+  <h2>🌺 Menta – Mentha spicata</h2>
+  <img src="./assets/img/menta.png" alt="Menta">
+  <p>Illatos levele és virágai miatt népszerű gyógynövény, méhbarátként is kiváló.</p>
+  <ul>
+    <li>🐝 Méhbarát</li>
+    <li>🌿 Évelő</li>
+  </ul>
+</section>
+
+<section class="page növény virágos évelő alacsony">
+  <h2>🌼 Talajtakaró varjúháj – Sedum spurium </h2>
+  <img src="./assets/img/varjuhaj.png" alt="Varjúháj">
+  <p>Alacsony, terjedő növekedésű évelő virág, amely kiválóan takarja a talajt.</p>
+  <ul>
+    <li>🌱 Alacsony növésű</li>
+    <li>🌿 Évelő</li>
+  </ul>
+</section>
+
+<section class="page növény gyep árnyékos évelő">
+  <h2>🌾 Árnyéktűrő gyepkeverék</h2>
+  <img src="./assets/img/gyp.png" alt="Árnyéktűrő gyep">
+  <p>Dús gyep, amely jól érzi magát kevésbé napos, árnyékos kertrészekben is.</p>
+  <ul>
+    <li>🌳 Árnyéktűrő</li>
+    <li>🌿 Évelő</li>
+  </ul>
+</section>
+
+<section class="page növény dísznövény évelő">
+  <h2>🌸 Hortenzia – Hydrangea macrophylla</h2>
+  <img src="./assets/img/hortenzia.jpg" alt="Hortenzia">
+  <p>Színes virágzatú évelő, amely savanyú talajban pompázik igazán, félárnyékban is jól fejlődik.</p>
+  <ul>
+    <li>🌿 Évelő</li>
+    <li>🌥 Félárnyékos</li>
+    <li>💧 Vízkedvelő</li>
+  </ul>
+</section>
+
+<section class="page növény gyümölcsfa lombhullató">
+  <h2>🌳 Cseresznyefa – Prunus avium</h2>
+  <img src="./assets/img/cseri.png" alt="Cseresznyefa">
+  <p>Tavasszal virágba borul, nyárra pedig lédús, zamatos termést hoz.</p>
+  <ul>
+    <li>🍒 Gyümölcsfa</li>
+    <li>🌳 Lombhullató</li>
+  </ul>
+</section>
+
+<section class="page növény gyógynövény évelő">
+  <h2>🌿 Macskamenta (Catnip) – Nepeta cataria </h2>
+  <img src="./assets/img/cat.jpg" alt="Macskamenta">
+  <p>A cicák kedvence, illatos levelei és virágai gyógynövényként is használhatóak.</p>
+  <ul>
+    <li>🌿 Évelő</li>
+    <li>🩺 Gyógynövény</li>
+  </ul>
+</section>
+
+<section class="page növény örökzöld sövény">
+  <h2>🌲 Buxus - Buxus sempervirens </h2>
+  <img src="./assets/img/buxus1 (1).jpg" alt="Buxus">
+  <p>Tömör lombja miatt ideális alacsony sövénynek, jól formázható.</p>
+  <ul>
+    <li>🌲 Örökzöld</li>
+    <li>✂️ Formázható</li>
+  </ul>
+</section>
+
+<section class="page növény évelő szárazságtűrő">
+  <h2>🌼 Kereklevelű szalmagyopár – Helichrysum petiolare  </h2>
+  <img src="./assets/img/kereklevelű szalmagy.png" alt="Kereklevelű szalmagyopár">
+  <p>Szárazságtűrő dísznövény, amely hosszan megtartja virágait és formáját.</p>
+  <ul>
+    <li>🌿 Évelő</li>
+    <li>☀️ Napos helyre</li>
+  </ul>
+</section>
+
+<section class="page növény dísznövény illatos">
+  <h2>🌹 Rózsa – Rosa spp</h2>
+  <img src="./assets/img/rosa.jpg" alt="Rózsa">
+  <p>Klasszikus kertdísz, illatos virágai sokféle színben elérhetők.</p>
+  <ul>
+    <li>🌹 Dísznövény</li>
+    <li>💐 Illatos</li>
+  </ul>
+</section>
+
+<section class="page növény vadvirág egynyári">
+  <h2>🌺 Mák (Poppy) – Papaver rhoeas</h2>
+  <img src="./assets/img/poppy.jpg" alt="Mák">
+  <p>Látványos színfoltja a virágágyásnak, elbűvölő szirmokkal és könnyed habitussal.</p>
+  <ul>
+    <li>🌺 Vadvirág</li>
+    <li>🕊 Egynyári</li>
+  </ul>
+</section>
+
+
+ <section class="page terko antikolt rusztikus fagyallo csuszásmentes referencia">
+  <h2>🧱 Prémium Antikolt Térkő</h2>
+  <img src="./assets/img/terko-premium.jpg" alt="Prémium antikolt térkő">
+  <p>Ez a térkő megoldás ideális nagyobb udvarokhoz, természetes kőhatásával elegáns összhangot teremt a növényzettel.</p>
+  <ul>
+    <li>🎨 Színek: szürke, homok, terrakotta</li>
+    <li>❄️ Fagyálló</li>
+    <li>🦶 Csúszásmentes</li>
+  </ul>
+</section>
+
+<section class="page terko gyephézagos vízáteresztő">
+  <h2>🌱 Gyephézagos térkő – Vitép Gaia</h2>
+  <img src="./assets/img/gyepracs.jpg" alt="Gyephézagos térkő">
+  <p>Masszív, vízáteresztő térkő, amely lehetővé teszi a zöldfelület megtartását parkolókban, kocsibeállóknál és kertekben.</p>
+  <ul>
+    <li>🌱 Gyephézagos</li>
+    <li>🚗 Személyautós forgalomra</li>
+    <li>💧 Vízáteresztő</li>
+  </ul>
+</section>
+
+<section class="page terko antikolt rusztikus">
+  <h2>🪨 Travertin Classic Antikolt</h2>
+  <img src="./assets/img/travertin.jpg" alt="Travertin Classic Antikolt">
+  <p>Természetes mészkőből készült, bézs árnyalatú, rusztikus megjelenésű térkő, amely eleganciát sugároz kültéren és beltéren egyaránt.</p>
+  <ul>
+    <li>🪨 Antikolt</li>
+    <li>🏡 Kültéri és beltéri</li>
+  </ul>
+</section>
+
+<section class="page terko antikolt rusztikus mediterrán">
+  <h2>🔥 Fuego Antico</h2>
+  <img src="./assets/img/fuego.jpg" alt="Fuego Antico">
+  <p>Bontott tégla hatású, mediterrán stílusú térkő, enyhén karcos felülettel és töredezett élekkel, ideális kerti utakhoz és teraszokhoz.</p>
+  <ul>
+    <li>🏛 Antikolt</li>
+    <li>🌿 Mediterrán stílus</li>
+  </ul>
+</section>
+
+<section class="page terko antikolt rusztikus szemelyauto">
+  <h2>🍂 Mercato – Fahéj</h2>
+  <img src="./assets/img/mercato.jpg" alt="Mercato Fahéj">
+  <p>Meleg árnyalatú, satírozott felületű térkő, amely patinás hangulatot kölcsönöz a burkolt felületeknek.</p>
+  <ul>
+    <li>🍂 Antikolt</li>
+    <li>🚗 Személyautós forgalomra</li>
+  </ul>
+</section>
+
+<section class="page terko antikolt rusztikus kombi hullamos">
+  <h2>🏰 Castello Antico Kombi</h2>
+  <img src="./assets/img/castello.jpg" alt="Castello Antico Kombi">
+  <p>Hullámos élekkel és finoman karcolt felülettel rendelkező térkő, amely klasszikus stílusban varázsolja újjá a kültéri tereket.</p>
+  <ul>
+    <li>🏛 Antikolt</li>
+    <li>🔀 Kombi forma</li>
+    <li>🌊 Hullámos szélű</li>
+  </ul>
+</section>
+
+<section class="page terko antikolt rusztikus disztegla">
+  <h2>🏛 Cicero</h2>
+  <img src="./assets/img/cicero.jpg" alt="Cicero térkő">
+  <p>Finom felületű, antik eleganciát sugárzó térkő, amely az ókori római kertművészet hangulatát idézi.</p>
+  <ul>
+    <li>🏛 Antikolt</li>
+    <li>🧱 Dísztégla</li>
+  </ul>
+</section>
+
+<section class="page terko terméskő rusztikus hasitott">
+  <h2>🪨 Terméskő burkolat – Solnhofeni mészkő</h2>
+  <img src="./assets/img/solnhofeni.jpg" alt="Terméskő burkolat">
+  <p>Természetes, szabálytalan formájú kőlapokból álló burkolat, amely rusztikus és időtálló megjelenést biztosít. Kültéren és beltéren is alkalmazható.</p>
+  <ul>
+    <li>🪨 Terméskő</li>
+    <li>🏡 Kültéri és beltéri</li>
+    <li>🪓 Hasított felület</li>
+  </ul>
+</section>
+
+
+
+
+
+
 
     <!-- 📖 Referencia lapok -->
     <section class="page referencia before-after">
@@ -85,14 +380,17 @@
 
     <section class="page referencia before-after">
       <h2>🌳 Kertfelújítás – Előtte / Utána</h2>
-      <img src="./assets/img/before.jpg" alt="Előtte kép">
-      <img src="./assets/img/after.jpg" alt="Utána kép">
+      <img src="./assets/img//munka (18).jpeg" alt="Előtte kép">
+      <img src="./assets/img/munka (7).jpeg" alt="Utána kép">
       <p>
         Az eredeti zöldterületet rusztikus térkövekkel, virágágyással és pergolával alakítottuk át – harmonikus és könnyen karbantartható látvány.
       </p>
     </section>
 
   </div>
+
+  
+
 
   <!-- 🔹 JavaScript betöltés -->
   <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
